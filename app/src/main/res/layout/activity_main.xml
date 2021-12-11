@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/blue_50"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/guessWho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:layout_weight="50"
+        android:adjustViewBounds="true"
+        android:maxWidth="150px"
+        android:maxHeight="100px"
+        android:minWidth="150px"
+        android:minHeight="100px"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25px"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:paddingStart="40dp">
+
+    </RadioGroup>
+
+    <Button style="@style/RoundedCornerButton"
+        android:background="@drawable/custom_buttons"
+        android:id="@+id/check"
+        android:layout_marginTop="50px"
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:textSize="25sp"
+        android:text="Начать" />
+
+    <Button style="@style/RoundedCornerButton"
+        android:background="@drawable/custom_buttons"
+        android:id="@+id/skip"
+        android:visibility="invisible"
+        android:layout_marginTop="50px"
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="skip"
+        android:textSize="16sp"
+        android:text="Пропустить" />
+
+    <Button style="@style/RoundedCornerButton"
+        android:background="@drawable/custom_buttons"
+        android:id="@+id/finish"
+        android:visibility="invisible"
+        android:layout_marginTop="50px"
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="finish"
+        android:textSize="16sp"
+        android:text="Завершить" />
+
+
+</LinearLayout>
